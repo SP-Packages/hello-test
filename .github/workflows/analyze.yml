@@ -1,6 +1,7 @@
 name: Analyze
 
 on:
+  workflow_dispatch:
   pull_request:
     branches:
       - main
@@ -8,4 +9,4 @@ on:
 
 jobs:
   analyze:
-    uses: SP-Packages/actions/.github/workflows/code-quality.yml@main
+    uses: SP-Packages/actions/.github/workflows/code-quality.yml@new-v1
