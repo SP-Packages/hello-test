@@ -1,0 +1,32 @@
+{
+  "name": "@sp-packages/hello-test",
+  "description": "A simple Hello Test package",
+  "version": "0.0.1",
+  "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "Senthilprabu Ponnusamy",
+    "email": "info@senthilprabu.in",
+    "url": "https://www.senthilprabu.in"
+  },
+  "keywords": [
+    "hello",
+    "test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SP-Packages/hello-test.git"
+  },
+  "main": "./src/index.js",
+  "bin": {
+    "hello-test": "./src/bin/index.js"
+  },
+  "scripts": {
+    "start": "node bin/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "funding": {
+    "type": "PayPal",
+    "url": "https://www.paypal.me/senthilprabu"
+  }
+}
