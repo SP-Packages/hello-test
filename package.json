@@ -17,16 +17,28 @@
     "type": "git",
     "url": "https://github.com/SP-Packages/hello-test.git"
   },
-  "main": "./src/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+  "dist",
+  "README.md"
+  ],
+  "main": "./dist/index.js",
   "bin": {
-    "hello-test": "./src/bin/index.js"
+    "hello-test": "./dist/bin/index.js"
   },
   "scripts": {
+    "build": "tsc",
     "start": "node bin/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "funding": {
     "type": "PayPal",
     "url": "https://www.paypal.me/senthilprabu"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.9",
+    "typescript": "^5.8.2"
   }
 }
