@@ -1,0 +1,11 @@
+name: Analyze
+
+on:
+  pull_request:
+    branches:
+      - main
+      - develop
+
+jobs:
+  analyze:
+    uses: SP-Packages/actions/.github/workflows/code-quality.yml@main
